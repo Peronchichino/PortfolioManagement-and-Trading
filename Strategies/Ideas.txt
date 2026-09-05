@@ -1,0 +1,41 @@
+Opening candle: 5 minute US open:
+- 5min candle chart
+- first candle only
+- if closes above 12 EMA -> buy/long
+- if closes below 12 EMA -> sell/short
+- wait for price to hit trailing stoploss
+- position gets volatility based stop
+- 1% per day
+- nasdaq
+
+AI trade warning sign: (Nicholas Crown)
+- junk bond market
+- HYG/IEF, high yield bond index divded by 7 to 10 year treasury index
+- widens -> more credit risk
+- narrows -> money is tighter
+
+Technical indicators:
+- volume is king
+- SMAs good
+- bollinger bands ok
+- donchian channels
+
+Crystal Ball: SP500 daily move: (Nicholas Crown)
+- take VIX, divide by 16 -> supposedly gives % implied daily move
+- 16 comes from rounded result of square root of trading days in the year
+- based on options contracts on SP500
+
+Beat VWAP: (Nicholas Crown)
+- sessions fair price
+- above -> buyers in control
+- below -> sellers in control
+- enter long on first pullback
+
+Tom Hougaard High Low Next Week:
+- if the high during friday is not as high on thursday (day before) -> low on friday will be visited on friday
+    - he says very high prob
+- if wednesdays high is lower than mondays high -> lows of wednesday will be visited on thursday
+
+Cross-sectional price momentum:
+- past relative winners tend to continue outperforming past relative losers
+- check SSRN-id3247865
