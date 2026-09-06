@@ -84,3 +84,22 @@ Backtest:
 - market exposure time was only around 11%
 - would work for extreme risk and drawdown aversion and worked pretty well in sideways markets, terrible for strong bull market like 2020 -> 2026
 
+=========================================
+Difference between equal weigtht and SPY:
+=========================================
+- pretty basic and understandable
+- add momentum based trading for each stock as well
+
+===========================
+Buy at close, Sell at open:
+===========================
+- self explanatory
+- has been heavily promoted over social media
+
+============================================
+Correlation between metals nad metal stocks:
+============================================
+- maybe there is some arbitrage or correlation between
+- pair trade possible?
+- problem: most metals and rare earths are OTC
+
