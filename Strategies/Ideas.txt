@@ -1,4 +1,6 @@
+=================================
 Opening candle: 5 minute US open:
+=================================
 - 5min candle chart
 - first candle only
 - if closes above 12 EMA -> buy/long
@@ -7,35 +9,78 @@ Opening candle: 5 minute US open:
 - position gets volatility based stop
 - 1% per day
 - nasdaq
+---------
+Backtest:
+- an absolute catastrophic fail
+- 16.95% winrate when looking at the past 60 days (yfinance limit 5min data)
+- total net return in 60 days was -22%
 
+
+=======================================
 AI trade warning sign: (Nicholas Crown)
+=======================================
 - junk bond market
 - HYG/IEF, high yield bond index divded by 7 to 10 year treasury index
 - widens -> more credit risk
 - narrows -> money is tighter
 
+=====================
 Technical indicators:
+=====================
 - volume is king
 - SMAs good
 - bollinger bands ok
 - donchian channels
 
+================================================
 Crystal Ball: SP500 daily move: (Nicholas Crown)
+================================================
 - take VIX, divide by 16 -> supposedly gives % implied daily move
 - 16 comes from rounded result of square root of trading days in the year
 - based on options contracts on SP500
 
+===========================
 Beat VWAP: (Nicholas Crown)
+===========================
 - sessions fair price
 - above -> buyers in control
 - below -> sellers in control
 - enter long on first pullback
 
+================================
 Tom Hougaard High Low Next Week:
+================================
 - if the high during friday is not as high on thursday (day before) -> low on friday will be visited on friday
-    - he says very high prob
 - if wednesdays high is lower than mondays high -> lows of wednesday will be visited on thursday
+---------
+Backtest:
+- File: TomHougaard_SituationalAnalysis_Test.py
+- on 24 years of data it proved no better than a coinflip
+- is NOT a viable strategy, if anything maybe a price action indicator, but thats about it
 
+===============================
 Cross-sectional price momentum:
+===============================
 - past relative winners tend to continue outperforming past relative losers
 - check SSRN-id3247865
+---------
+Backtest:
+- good returns on average but high max drawdown
+- very good for sector bullmarkets
+- not so good on news heavy stocks
+- inflated returns, not very viable on the long rounded
+- bubbles destroy this strategy
+
+========================================
+Situational Analysis and Mean Reversion:
+========================================
+- use Tom Hougaard's situational analysis "strategy"/idea as a technical liquidity indicator
+- add mean reversion with 5 SMA and 200 SMA
+---------
+Backtest:
+- underperformed buy and hold SPY
+- max drawdown was significantly lower than buy and hold
+- much less volatility
+- market exposure time was only around 11%
+- would work for extreme risk and drawdown aversion and worked pretty well in sideways markets, terrible for strong bull market like 2020 -> 2026
+
