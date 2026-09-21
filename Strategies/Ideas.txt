@@ -103,3 +103,12 @@ Correlation between metals nad metal stocks:
 - pair trade possible?
 - problem: most metals and rare earths are OTC
 
+
+============================================
+Mean Reversion: Multi-sector + Multi-Market:
+============================================
+- same as regular mean reversion SMA5 and SMA200 calc
+- instead of just looking at SPY or VOO, look at all markets and trade mutliple sectors
+- would need comprehensive list of various ETFs
+- max hold period should be variable and not set to specific length
+
