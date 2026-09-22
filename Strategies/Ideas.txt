@@ -111,4 +111,9 @@ Mean Reversion: Multi-sector + Multi-Market:
 - instead of just looking at SPY or VOO, look at all markets and trade mutliple sectors
 - would need comprehensive list of various ETFs
 - max hold period should be variable and not set to specific length
-
+---------
+Backtest:
+- good returns, but still didnt beat buy n hold, 2.3x return over 11 years not too great but good
+- too many high vol ETFs
+- slightly smaller spectrum could fix it
+- needs some other signal than just mean reversion for better entries
