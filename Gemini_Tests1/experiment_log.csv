@@ -1,0 +1,11 @@
+Iteration,Strategy,Parameters,Change / Rationale,Train CAGR,Train Sharpe,Train MaxDD,Train Trades,Val CAGR,Val Sharpe,Val MaxDD,Val Trades,Dev Sharpe,Dev MaxDD,Status
+1,Baseline RSI(2),"RSI(2) < 10 entry, > 60 exit",Baseline entry/exit without filters or stops.,3.14%,0.53,-8.09%,37,25.77%,2.66,-1.95%,13,0.88,-8.09%,Candidate
+2,Macro Trend Filter,"RSI(2) < 10, Close > SMA(200)",Add 200-day SMA regime filter and emergency regime exit.,2.15%,0.09,-8.99%,22,22.23%,2.66,-1.95%,13,0.74,-9.21%,Candidate
+3,Mean Touch Exit,Close > SMA(5) Exit,Replace RSI exit with Close > SMA(5).,2.50%,0.16,-8.89%,23,19.69%,2.18,-1.95%,13,0.65,-8.89%,Candidate
+4,Time-Based Cutoff,Close > SMA(5) or Max 5 Days,Add 5-day maximum holding period limit.,1.56%,-0.03,-11.47%,23,16.42%,2.18,-1.95%,13,0.52,-11.47%,Evaluated
+5,Rolling Z-Score Entry,Z-Score(20) < -1.5,Replace RSI(2) with 20-day rolling z-score < -1.5.,0.43%,-0.20,-10.36%,18,5.72%,0.89,-3.94%,5,0.10,-12.34%,Evaluated
+6,Volatility-Adaptive Entry,RSI < 6 (High Vol) / < 12 (Low Vol),Adaptive RSI threshold scaled by 20-day realized volatility.,1.66%,0.10,-10.65%,27,15.94%,2.01,-1.96%,14,0.57,-10.65%,Evaluated
+7,Catastrophic ATR Stop,3.5 * ATR Circuit Breaker,Add 3.5 * ATR stop loss from entry.,1.56%,-0.03,-11.47%,23,16.42%,2.18,-1.95%,13,0.52,-11.47%,Evaluated
+8,Volume Exhaustion Filter,Volume >= 1.0 * VolSMA(20),Require volume on dip >= 20-day average volume.,1.52%,0.01,-11.46%,22,14.33%,1.86,-2.00%,11,0.47,-11.46%,Evaluated
+9,Trend Slope Filter,SMA(200) Slope(20) >= 0,Add 20-day slope check on 200-day SMA.,0.31%,0.04,-10.51%,22,12.17%,2.18,-1.95%,13,0.58,-10.51%,Evaluated
+10,Refined Production Champion,RSI < 10 & SMA200 Bull & Slope >= 0 & 3.5 ATR Stop,"Ensemble of trend quality, mean touch exit, time cutoff, and ATR circuit breaker.",0.31%,0.04,-10.51%,22,12.17%,2.18,-1.95%,13,0.58,-10.51%,Evaluated

@@ -117,3 +117,123 @@ Backtest:
 - too many high vol ETFs
 - slightly smaller spectrum could fix it
 - needs some other signal than just mean reversion for better entries
+
+===================
+Algebraic Topology:
+===================
+- model market as weighted graph of stocks
+- run laplace transfusion on recent returns 
+- peristence homology on correlations to compress global market shape over regime features
+- market neutral model
+
+
+===========================
+Pair-Trade: Is it worth it:
+===========================
+- correlation
+    - strength and direction of linear relationship
+    - -1 to 1
+    - does not mean assets are cointegrated or tradeable
+- half life
+    - measures how quickly the spread reverts to its mean
+    - half life is expected time it takes for a deviation from the mean to reduce by 50%
+    - sharter half life means the sprad mean-reverts faster, attractive for trading
+    - estimated using Ornstein-Uhlenbeck process, via linear regression on lagged spread values
+- Augmented Dickey-Fuller test (ADF)
+    - checks for unit root in the spread
+    - null hypothesis: the spread has a unit root (non-stationary) -> not suitable for trading
+    - a more negative test statistic than the critical value means we reject H0 (stationary spread)
+
+
+========================================
+Positioning over Price: (Nicholas Crown)
+========================================
+- 3 sources
+    - CFTC Commitments of Traders Reports
+        - every friday at 3:30pm
+    - Prime brokerage data
+        - costly, cant afford, not an option
+        - leaks are available sometimes
+    - gamma exposure on options
+
+
+=========================================
+3 Minute, 2 Indicator: (Austin Daytrades)
+=========================================
+- indicators, 3min candle chart 
+    - VWAP
+        - source: (O + H + L + C)/4
+        - anchor: session
+    - EMA
+        - length: 9
+        - Source: close
+- entry: right before or at VWAP and EMA cross
+- cross to upside -> buy calls
+- cross to downside -> buy puts
+
+
+================================
+4Chan Session Trend: (Anonymous)
+================================
+- mark out asia and london high and low
+- wait for highs and lows to sweep
+- 1min chart: fair value gap reversal to the other side
+- trade targeting 1:2 RR
+
+
+=========================================
+VWAP 1min Candle Close: (telonicstrading)
+=========================================
+- if 1min candle closes above VWAP go long
+- if 1min candle closes below VWAP go short
+
+
+============================
+2 Candle open: (bennytrades)
+============================
+- mark high and low of first 2 candles on 15min chart
+- if next candle closes above high range then go long
+    - stop below low candle close range
+    - 10 points TP
+- if next candle closes above low range then go short
+    - stop below low candle close range
+    - 10 points TP
+- apparently does not beat buy-and-hold
+    - FML
+
+
+==================================
+Do charts oscillate like a signal?
+==================================
+- pretty self explanatory
+- do charts oscillate
+- if they do, is there a range
+
+
+===========================
+Weather and Holiday Factor:
+===========================
+- does weather from previous night and of morning affect price-action intraday?
+- is there any sort of correlation between holidays and market price-action?
+    - christian holidays
+    - jewish holidays
+    - global holidays, like historic events, independence days etc
+
+
+
+===============
+Backtest ideas:
+===============
+- race strategy against random copies of itself, whatever that means
+- run against simulated randomized market, daily monte carlo
+- 
+
+=================
+General Pointers:
+=================
+- futures contract for heating is "ultra-low sulfur diesel" (Nicholas Crown)
+    - powers trucking, freight, farming
+- ADX for trend following strategy (matfinog)
+    - if ADX > 20 open position
+    - mean reversion if adx is decreasing/losing momentum
+
