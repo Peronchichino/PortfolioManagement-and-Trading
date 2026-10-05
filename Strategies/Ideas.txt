@@ -236,4 +236,30 @@ General Pointers:
 - ADX for trend following strategy (matfinog)
     - if ADX > 20 open position
     - mean reversion if adx is decreasing/losing momentum
-
+- Treasury General Account (TGA)
+    - represents US govs "checking account"
+    - guessing its not a ticker or a easy access data source
+        - build web scraper maybe?
+    - tax revenue, money gov borrows
+    - "dry powder"
+    - maybe compare to gold price for inflation adjusted
+- quantitative easing
+    - printing money
+    - FOMC
+- quantitative tightening
+    - FOMC
+- federal reserve balance sheet (FRBS)
+    - liquidity injected into system
+    - buy backs -> liquidity injection for banks -> market liquidity injection
+- reverse repo (RRepo)
+    - black hole of liquidity
+    - Reverse Repo Market
+    - high reverse repo -> less liquidity, low reverse repo -> more liquidity
+- Americas net liquidity (money actually in sysmte)
+    - = FRBS - RRepo - TGA
+- US M2 money supply 
+    - money supply climbs, consumer prices climb 
+        - correlation has lag 
+    - wealth growth matches money supply growth
+        - doesnt really lag 
+    - 
