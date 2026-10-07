@@ -170,6 +170,9 @@ Positioning over Price: (Nicholas Crown)
 - entry: right before or at VWAP and EMA cross
 - cross to upside -> buy calls
 - cross to downside -> buy puts
+---------
+Backtest:
+- no better than a coinflip, not enough data
 
 
 ================================
@@ -179,14 +182,19 @@ Positioning over Price: (Nicholas Crown)
 - wait for highs and lows to sweep
 - 1min chart: fair value gap reversal to the other side
 - trade targeting 1:2 RR
-
+---------
+Backtest:
+- no better than a coinflip, not enough data
 
 =========================================
 VWAP 1min Candle Close: (telonicstrading)
 =========================================
 - if 1min candle closes above VWAP go long
 - if 1min candle closes below VWAP go short
-
+---------
+Backtest:
+- no better than a coinflip
+- basically just noise
 
 ============================
 2 Candle open: (bennytrades)
@@ -200,10 +208,12 @@ VWAP 1min Candle Close: (telonicstrading)
     - 10 points TP
 - apparently does not beat buy-and-hold
     - FML
-
+---------
+Backtest:
+- no better than a coinflip
 
 ==================================
-Do charts oscillate like a signal?
+Do charts oscillate like an electric signal?
 ==================================
 - pretty self explanatory
 - do charts oscillate
