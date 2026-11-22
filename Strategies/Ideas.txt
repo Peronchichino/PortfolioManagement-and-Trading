@@ -230,6 +230,41 @@ Weather and Holiday Factor:
     - global holidays, like historic events, independence days etc
 
 
+==================
+The Turtle Trader:
+==================
+- made by richard dennis, decades ago
+- rules
+    - highest price of last 20 days, if it breaks out, buy
+    - 2 stop losses
+        - fixed stop loss
+            - 2 ATR of the last 20 days
+            - doesnt move
+        - trailing stop
+            - lowest price of last 10 days
+            - recalculate every day
+    - sell at first one hit
+- use cases
+    - historical aka original use case
+        - bonds
+        - forex
+        - commodities
+        - futures
+        - trending markets basically
+    - todays use cases/tests
+        - gold
+        - bitcoin
+        - nasdaq and SP500
+        - silver
+- direction
+    - historical
+        - long and short
+    - todays
+        - long only
+- risk
+    - pyramiding
+    - or 2% per trade on high-water mark
+- 
 
 ===============
 Backtest ideas:
